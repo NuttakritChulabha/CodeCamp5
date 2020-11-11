@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฝึกหัด พิเศษ 7</title>
+</head>
+<body>
+    <script>
+        function draw(n){
+            let sum = "";
+            let num = (n*n)+1 ;
+            for(i=n;i>=1;i--){
+                sum ="";
+                for(j=n;j>=1;j--){
+                 num--;
+                 sum = sum + String(num);
+               }
+               console.log(sum);
+            } 
+        }
+
+        let n = prompt("กรุณากรอกค่า n");
+        draw(n);
+    </script>
+</body>
+</html>
