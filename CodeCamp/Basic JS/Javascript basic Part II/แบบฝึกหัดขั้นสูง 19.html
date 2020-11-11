@@ -1,0 +1,44 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฝึกหัดขั้นสูง 19</title>
+
+</head>
+<body>
+    <script>
+      function draw(n){
+
+        for(i=1;i<=n;i++){
+                let sum="";
+                for(j=n;j>=1;j--){
+                    if(i>=j){
+                        sum = sum +"*"
+                    }else{
+                        sum = sum +"-"
+                    }
+                }  
+                console.log(sum);
+            }   
+            for(i=n-1;i>=1;i--){
+                let sum="";
+                for(j=n;j>=1;j--){
+                    if(i>=j){
+                        sum = sum +"*"
+                    }else{
+                        sum = sum +"-"
+                    }
+                }  
+                console.log(sum);
+            }   
+        
+            
+
+        }
+
+        let n = prompt("กรุณากรอกค่า n");
+        draw(n);
+    </script>
+</body>
+</html>
