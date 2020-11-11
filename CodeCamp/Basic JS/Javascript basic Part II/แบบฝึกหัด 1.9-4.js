@@ -1,8 +1,6 @@
-// 1.9.  แบบฝึกหัด
-// 1. คำสั่งต่อไปนี้จะแสดงค่าเป็นอะไร
+//1.9.  แบบฝึกหัด
+//4. คำสั่ง alert ไหนที่จะถูกรันบ้าง
 
-            alert( null || 2 || undefined );                //  alert(2)
-            alert( alert(1) || 2 || alert(3) );             //  ทำ alert(1) และจบที่ alert(2)
-            alert( 1 && null && 2 );                        //  alert(null) 
-            alert( alert(1) && alert(2) );                  //  ทำ alert(1) และจบที่ undefined
-            alert( null || 2 && 3 || 4 );                   //  alert(3)
+         if (-1 || 0) alert( 'first' );              //run
+         if (-1 && 0) alert( 'second' );             //not run
+         if (null || -1 && 0) alert( 'third' );      //not run                
