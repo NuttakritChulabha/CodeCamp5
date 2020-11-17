@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.11 แบบฝึกหัด 4</title>
+</head>
+<body>
+    <script>
+        function extractCurrencyValue(string, rate){
+            let num = string.slice(1);
+            let dollar = parseInt(num); //ถ้าเอา '$120' เข้าเลยจะเป็น NaN
+            let change = dollar * Number(rate);
+            alert (`${string} change to ฿${change}`)
+        }
+
+        extractCurrencyValue('$120', 30.5)
+
+    </script>
+</body>
+</html>

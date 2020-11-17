@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.11 แบบฝึกหัด 1</title>
+</head>
+<body>
+    <script>
+        function ucFirst(string){
+            let i = 0;
+            let str = ``;
+            let tem 
+            for(let key of string)
+                if (i == 0) {
+                    str = key.toUpperCase();
+                    i++;
+                } else {
+                    tem = key.toLowerCase();
+                    str = str + tem;
+                    i++;
+                }
+                
+            return str;
+        }
+
+        let a = ucFirst("i Love You");
+        alert(a);
+
+
+
+    </script>
+    
+</body>
+</html>

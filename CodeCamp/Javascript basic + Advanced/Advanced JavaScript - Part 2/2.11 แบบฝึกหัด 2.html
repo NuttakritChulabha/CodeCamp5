@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.11 แบบฝึกหัด 2</title>
+</head>
+<body>
+    <script>
+        function checkSpam(str){
+            let result1 = str.indexOf("xxx");
+            let result2 = str.indexOf("viagra");
+            let found = false;
+            if (result1 >= 0 || result2 >= 0) {
+                found = true;
+            }
+            return found;
+        }
+
+        let a = "xxx viagra";
+        let b = "xxx test system";
+        let c = "viagra test system";
+        let d = "test system";
+
+        alert(`${a}=>${checkSpam(a)}\n${b}=>${checkSpam(b)}\n${c}=>${checkSpam(c)}\n${d}=>${checkSpam(d)}`);
+
+    </script>
+</body>
+</html>
