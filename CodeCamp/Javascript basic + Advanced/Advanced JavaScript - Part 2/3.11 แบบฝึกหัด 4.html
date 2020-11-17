@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.Maximal contiguous subarray (**Optional**)</title>
+</head>
+<body>
+    <script>
+        function getMaxSubSum(arr){
+          let max = 0;
+          let sum = 0;
+          for(let i=0;i<arr.length;i++){
+            sum = 0;
+            sum = +arr[i];
+            for(let j=i+1;j<arr.length;j++){
+                 sum = sum +(+arr[j]);
+                 console.log(sum)
+                 if (sum > max) {
+                     max = sum;
+                 }
+            }
+          }
+          for(let key of arr){
+            if(key > max){
+                max =key;
+            }
+          }
+          alert(max)
+        }  
+    </script>
+</body>
+</html>
