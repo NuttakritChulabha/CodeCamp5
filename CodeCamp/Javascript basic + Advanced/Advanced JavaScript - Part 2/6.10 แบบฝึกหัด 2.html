@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.10 แบบฝึกหัด 2</title>
+</head>
+<body>
+    <script>
+
+         function isAnagram(stringA, stringB) {
+        // Sanitizing
+        stringA = stringA.toLowerCase().replace(/[\W_]+/g, "");
+        stringB = stringB.toLowerCase().replace(/[\W_]+/g, "");
+
+        // sorting
+        const stringASorted = stringA.split("").sort().join("");
+        const stringBSorted = stringB.split("").sort().join("");
+
+        return stringASorted === stringBSorted;
+        }
+        
+
+        let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+        let arr1 =["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+        for (let i = 0; i < arr.length ; i++ ){
+            for (let j = i+1; j < arr.length; j++){
+                if ((isAnagram( arr[i],arr[j] )) && (arr[i].length == arr[j].length) ){
+                    arr1[j] = 0;
+                }
+            }
+        }
+        let Ans = new Set(arr1);
+        Ans.delete(0);
+        console.log(Ans);
+
+    </script>
+</body>
+</html>
