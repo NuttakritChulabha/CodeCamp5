@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.10 แบบฝึกหัด 1.11</title>
+</head>
+<body>
+    <script>
+        let array1 = [
+            { name: "apple", birth: "2000-01-01" },
+            { name: "banana", birth: "1990-10-01" },
+            { name: "watermelon", birth: "1985-12-01" },
+        ];
+        
+        let array2 = array1.map( function(x){
+            let a = x;
+            a.age = (2020-(a.birth.slice(0,4)));
+            return a;
+        });
+        
+        console.log(array2);
+    </script>
+    
+</body>
+</html>

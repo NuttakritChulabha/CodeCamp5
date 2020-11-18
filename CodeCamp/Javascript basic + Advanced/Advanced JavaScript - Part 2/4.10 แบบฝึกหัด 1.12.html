@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.10 แบบฝึกหัด 1.12</title>
+</head>
+<body>
+    <script>
+        let array1 = [
+            { name: "apple", birth: "2000-01-01" },
+            { name: "banana", birth: "1990-10-01" },
+            { name: "watermelon", birth: "1985-12-01" },
+        ];
+        
+        let array2 = array1.map( function(x){ 
+            let a = x;
+            a.birth = String(new Date(a.birth)).slice(4,15);
+            a.birth = `${a.birth.slice(4,6)} ${a.birth.slice(0,3).toLowerCase()} ${a.birth.slice(-4)}`
+            let y =`<tr>
+                    <td>${a.name}</td> 
+                    <td>${a.birth}</td>
+                    </tr>`
+            return y;
+        });
+        
+        console.log(array2);
+    </script>
+    
+</body>
+</html>
